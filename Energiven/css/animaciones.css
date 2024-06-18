@@ -1,0 +1,125 @@
+.ani-1{
+    animation: aparecer-epicamente ease-in-out forwards 1s;
+}
+
+@keyframes aparecer-epicamente{
+    from {
+        transform: translate(100%, 50%);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+
+.ani-2{
+    animation: aparecer-derecha forwards 1s ease-in-out;
+}
+
+@keyframes add-color {
+    from{
+        background-color: transparent;
+    }
+
+    to{
+        background-color: var(--dark-color);
+    }
+}
+
+.ani-3{
+    animation: aparecer-texto-1 forwards .8s ease-in;
+}
+
+@keyframes aparecer-texto-1 {
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+.ani-4{
+    animation: desaparecer ease-in-out both;
+    animation-timeline: scroll(root);
+    animation-range: start 20vh ;
+}
+
+@keyframes desaparecer {
+    from{
+        transform: translate(0, 0);
+    }
+
+    10%{
+        transform: translate(100%,0);
+    }
+}
+
+
+@keyframes smallerlogo {    
+    to{        
+        width: 10%;
+    }
+    
+}
+
+.ani-apper-left{
+    animation: aparecer-izquierda both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 35%;
+}
+.ani-apper-right{
+    animation: aparecer-derecha both ;
+    animation-timeline: view();
+    animation-range: entry 10% cover 35%;
+}
+
+@keyframes aparecer-derecha {
+    from{
+        opacity: 0;
+        transform: translate(-100%, 0%);
+    }    
+    to{
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+}
+@keyframes aparecer-izquierda {
+    from{
+        opacity: 0;
+        transform: translate(100%, 0%);
+    }    
+    to{
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+}
+
+
+.ani-title{
+    animation: aparecer-texto-1 both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%; 
+}
+
+.ani-cards,
+.cards-metrics,
+.cards-grid,
+.Face,
+.Insta,
+.Tiktok
+{
+    animation: aparecer-vertical-arriba both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+@keyframes aparecer-vertical-arriba {
+    from {
+        opacity: .5;
+        transform: translate(0, 100px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
