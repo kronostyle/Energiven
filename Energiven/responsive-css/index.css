@@ -125,7 +125,21 @@
         display: none;
         }
     
-
+        .Cont-redes-grid {
+            grid-template-columns: repeat(1, auto);
+            align-items: center;
+            justify-content: center;
+            gap: 1em 2em;
+        }
+    
+        .Tiktok {        
+            grid-column: auto;
+            border-radius: 15px;
+        }
+    
+        .Face{
+            min-height: 500px;
+        }
 
 }
 
@@ -170,6 +184,41 @@
         grid-template-columns: repeat(1,1fr);
         
         
+    }
+
+    /* Footer */
+    .Footer {
+        padding-top: 25px;
+    }
+    
+    .Nav-footer {
+        flex-direction: column;
+        border: none;
+    }
+    
+    .Footer-logo {
+        width:25%;
+    }
+    
+    .Cont-3 {
+        width: 100%;
+        flex-direction: column;
+        border: none;
+        gap: 5%;
+    }
+    
+    .Cards-foot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: .9rem;
+    }
+    
+    .Footer-rrss {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
     }
 }
 

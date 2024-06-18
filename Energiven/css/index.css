@@ -101,6 +101,7 @@
     --verde_3: #4e8d08;
     --bg-input:#fff;
     --primary-color: #008000;
+    --lines-color:var(--dark-color);
     --dark-color: rgb(45, 45, 45);
     --white-color: rgb(254, 254, 254);
     --trans-primary: rgba(0, 128, 0, 0.329);
@@ -135,6 +136,12 @@
     width: 10px;
     height: 10px;
     background-color: var(--dark-color);
+}
+.white-line,
+.white-line.line-title1::before,
+.white-line.line-title2::before
+ {
+    background-color: var(--body-color);
 }
 
 .line-title2::before {
@@ -176,7 +183,7 @@
 .Cont-redes-grid {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(8, auto);
+    grid-template-columns: repeat(2, auto);
     align-items: center;
     justify-content: center;
     gap: 1em 2em;
@@ -184,13 +191,13 @@
 
 .Tiktok {
     width: 100%;
-    grid-column: span 8;
+    grid-column: span 2;
     border-radius: 15px;
 }
 
 .Face {
     width: 100%;
-    min-width: 360px;
+    min-width: 340px;
     max-width: 500px;
     height: 100%;
     overflow: hidden;
@@ -201,11 +208,12 @@
 
 .Insta {
     width: 100%;
-
-   grid-column: 1/8;
-  
+    aspect-ratio: 1.8/2;
+    min-width: 340px;
+    max-width: 500px;
+    /* grid-column: span 2 ; */
     height: 100%;
-   
+    /* max-height: 1222.22px ; */
     border-radius: 15px;
 }
 
@@ -450,7 +458,7 @@
     gap: 2rem;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow: clip;
     padding-top: 5rem;
     min-height: 100dvh;
 }
@@ -566,7 +574,7 @@
     gap: 2rem;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow: clip;
     padding-top: 5rem;
     min-height: 100dvh;
     
@@ -725,7 +733,7 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: clip;
     margin-bottom: 2rem;
 
 }
@@ -818,7 +826,7 @@ display: none;
     gap: 2rem;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow: clip;
     padding-top: 5rem;
     min-height: 100dvh;
     position: relative;
@@ -922,7 +930,7 @@ display: none;
     gap: 2rem;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow: clip;
     padding-top: 5rem;
     min-height: 100dvh;
     position: relative;
@@ -1140,42 +1148,6 @@ display: none;
 
 
 }
-
-.Redes{
-    width: 90%;
-    margin: 0 1.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 1.4rem;
-    min-width: 300px;
-
-}
-.Insta{
-    width: 17rem;
-    height: 20rem;
-
-}
-
-
-
-.Face{
-    width: 17rem;
-    height: 20rem;
-    
-
-}
-
-
-
-.tiktok-embed{
-    width: 17rem;
-    height: 20rem;
-    
-    
-}
-
 
 
 /* ==================Inicio de Footer=========== */

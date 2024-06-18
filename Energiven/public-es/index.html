@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnergyVen</title>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- aos animation scroll -->
@@ -11,6 +17,8 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../responsive-css/index.css">
+    <link rel="stylesheet" href="../css/animaciones.css">
+
 
 </head>
 <body>
@@ -35,7 +43,7 @@
                     </article>
                     <ul class="nav-links">
                         <li class="link">
-                            <a href="#">Inicio</a>
+                            <a href="#home">Inicio</a>
                         </li>
                         <li class="link">
                             <a href="#about">Nosotros</a>
@@ -44,7 +52,7 @@
                             <a href="#services">Servicios</a>
                         </li>
                         <li class="link">
-                            <a href="#galeria">Projectos</a>
+                            <a href="#galeria">Proyectos</a>
                         </li>
                         <li class="link">
                             <a href="#contactos">Contactos</a>
@@ -123,19 +131,19 @@
     <!-- inicio de about -->
 
     <div class="about" id="about">
-        <section class="title">
-            <span id="point1"></span>
-            <h3>Nosotros</h3>
-            <span id="point2"></span>
+        <section class="Cont-titles">
+            <div class="line-title1 ani-apper-right"></div>
+            <h4 class="ltrs-xl ltrs-green2 ani-title">Nosotros</h4>
+            <div class="line-title2 ani-apper-left"></div>
         </section>
         <section class="container">
 
             <article class="info-about">
-                <p>
+                <p class="ani-apper-right">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores excepturi a eaque possimus ducimus ipsam aspernatur quo odio, error placeat, doloribus repudiandae quas aut earum nihil ipsum provident exercitationem praesentium.
                 </p>
                 <span></span>
-                <p>
+                <p class="ani-apper-left">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi est, nemo rerum quod accusamus saepe tempora incidunt aut placeat ut obcaecati consectetur totam eaque temporibus, cumque odio tenetur, facere hic.
                 </p>
             </article>
@@ -156,10 +164,10 @@
     <!-- inicio de Servicios -->
 
     <div class="services" id="services">
-        <section class="title">
-            <span id="point1"></span>
-            <h3>Servicios</h3>
-            <span id="point2"></span>
+        <section class="Cont-titles">
+            <div class="line-title1 ani-apper-right"></div>
+            <h4 class="ltrs-xl ltrs-green2 ani-title">Servicios</h4>
+            <div class="line-title2 ani-apper-left"></div>
         </section>
         <section class="container">
 
@@ -324,10 +332,10 @@
     <!-- inicio galeria -->
 
     <div class="galeria" id="galeria">
-        <section class="title">
-            <span id="point1"></span>
-            <h3>Projectos</h3>
-            <span id="point2"></span>
+        <section class="Cont-titles">
+            <div class="line-title1 white-line ani-apper-right"></div>
+            <h4 class="ltrs-xl ltrs-green2 ani-title">Proyectos</h4>
+            <div class="line-title2 white-line ani-apper-left"></div>
         </section>
         <article class="bg-absolute"></article>
         <section class="container">
@@ -359,10 +367,10 @@
     <!-- inicio Contactos -->
 
     <div class="contactos" id="contactos">
-        <section class="title">
-            <span id="point1"></span>
-            <h3>Contactos</h3>
-            <span id="point2"></span>
+        <section class="Cont-titles">
+            <div class="line-title1 ani-apper-right"></div>
+            <h4 class="ltrs-xl ltrs-green2 ani-title">Contactos</h4>
+            <div class="line-title2 ani-apper-left"></div>
         </section>
         <section class="container">
             <section class="formulario">
@@ -422,121 +430,203 @@
 
         <!-- Inicio de Valores Metricos -->
 
-        <div class="about" id="about">
-            <section class="title">
-                <span id="point1"></span>
-                <h3>Valores Métricos </h3>
-                <span id="point2"></span>
+        <div class="Cont">
+            <section class="Cont-titles">
+                <div class="line-title1 ani-apper-right"></div>
+                <h4 class="ltrs-xl ltrs-green2 titles ani-title">Metricas</h4>
+                <div class="line-title2 ani-apper-left"></div>
             </section>
-    
-            <section class="valores_metricos">
-                <iframe src="https://tradingeconomics.com/commodities" width="800px" height="650px" "0"></iframe>
-            </section>
+            <section class="Cont Cont-metrics-papa">
+                <!-- <div id="data_cnt"></div> -->
+                <div class="Cont-metrics">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="cards-metrics tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+            {
+                "symbol": "ACTIVTRADES:BRENTQ2024",
+                "width": "100%",
+                "height": "100%",
+                "locale": "en",
+                "dateRange": "1D",
+                "colorTheme": "light",
+                "isTransparent": false,
+                "autosize": false,
+                "largeChartUrl": ""
+            }
+        </script>
         </div>
-        
-    
-        <!-- Fin de Valores Metricos -->
-    
-    
-        <!-- Redes Sociales -->
-    
-        <div class="about" id="about">
-            <section class="title">
-                <span id="point1"></span>
-                <h3>Nuestras Redes Sociales</h3>
-                <span id="point2"></span>
-            </section>
-    
-            <div class="bg_redes">
-    
-        
-                <section class="Redes">
-                    <article class="Insta">
-                    <!-- Instagram -->
-                    <iframe class="Insta" src="https://www.instagram.com/energiven_/embed/" frameborder="0" scrolling="no" >
-    
-                    </iframe>
-                    <!-- Instagram -->
-    
-                </article>
-    
-                <article class="Face">
-    
-                    <!-- Facebook -->
-                    <iframe class="Face" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100063649997030&tabs=timeline&width=270&height=&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                    <!-- Facebook -->
-    
-                </article>
-    
-                <!-- Tiktok -->
-                <blockquote class="tiktok-embed Tiktok" cite="https://www.tiktok.com/@energiven_" data-unique-id="energiven_" data-embed-from="embed_page" data-embed-type="creator">
-                    <article>
-                        <a target="_blank" href="https://www.tiktok.com/@energiven_?refer=creator_embed">@energiven_</a>
-                    </article>
-                </blockquote>
-                <!-- Tiktok -->
-    
-    
-            </section>
-    
-        
-         </div>
-    
+        <!-- TradingView Widget END -->
+        <!-- TradingView Widget BEGIN -->
+        <div class="cards-metrics tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                    "symbol": "TVC:USOIL",
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "en",
+                    "dateRange": "1D",
+                    "colorTheme": "ligth",
+                    "isTransparent": false,
+                    "autosize": false,
+                    "largeChartUrl": ""
+                }
+            </script>
         </div>
-    
-        <!-- Final de redes sociales -->
+        <!-- TradingView Widget END -->
+        <!-- TradingView Widget BEGIN -->
+        <div class="cards-metrics tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                    "symbol": "NYMEX:MTF1!",
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "en",
+                    "dateRange": "1D",
+                    "colorTheme": "ligth",
+                    "isTransparent": false,
+                    "autosize": false,
+                    "largeChartUrl": ""
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <!-- TradingView Widget BEGIN -->
+        <div class="cards-metrics tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                    "symbol": "OANDA:WTICOUSD",
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "en",
+                    "dateRange": "1D",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "autosize": false,
+                    "largeChartUrl": ""
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <!-- TradingView Widget BEGIN -->
+        <div class="cards-metrics tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                    "symbol": "ACTIVTRADES:GASOLN2024",
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "en",
+                    "dateRange": "1D",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "autosize": false,
+                    "largeChartUrl": ""
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+        <!-- TradingView Widget BEGIN -->
+        <div class="cards-metrics tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                {
+                    "symbol": "CAPITALCOM:NATURALGAS",
+                    "width": "100%",
+                    "height": "100%",
+                    "locale": "en",
+                    "dateRange": "1D",
+                    "colorTheme": "ligth",
+                    "isTransparent": false,
+                    "autosize": false,
+                    "largeChartUrl": ""
+                }
+            </script>
+        </div>
 
-    <!-- Inicio de Footer -->
-
-    <footer class="footer">
-        <section class="container">
-            <article class="img-footer-logo">
-                <a href="#home">
-                    <img src="../recursos/LOGO_ENERGIVEN-SIN-FONDO-500px.webp" alt="Logo">
-                </a>
-            </article>
-            <section class="info-footer">
-                <article>
-                    <i class='bx bx-envelope'></i>
-                    <p>
-                        <a href="mailto:energiven@gmail.com">energiven@gmail.com</a>
-                    </p>
-
-                </article>
-                <article>
-                    <i class='bx bxs-map' ></i>
-                    <p>
-                        Lorem ipsum dolor sit amet
-                    </p>
-                </article>
-                <article>
-                    <i class='bx bx-phone'></i>
-                    <p>
-                        <a href="tel: +584129974462">04129974462</a>
-                    </p>
-
-                </article>
-            </section>
-            <section class="copiright">
-                <article class="info-copiright">
-
-                    <span>EnergiVen 2024</span>
-
-                </article>
-                <article class="social-media">
-                    <a href="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100063649997030&tabs=timeline&width=270&height=&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId">
-                        <i class='bx bxl-facebook' ></i>
-                    </a>
-                    <a href="https://www.instagram.com/energiven_/embed/">
-                        <i class='bx bxl-instagram' ></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@energiven_?refer=creator_embed">
-                        <i class='bx bxl-tiktok'></i>
-                    </a>
-                </article>
-
-            </section>
+        </div>
         </section>
+
+        </div>
+    
+
+        <!-- Fin de Valores Metricos -->
+        <!-- Contenedor de redes sociales -->
+
+        <div class="Cont Cont-5">
+            <section class="Cont-titles">
+                <div class="line-title1 ani-apper-right"></div>
+                <h4 class="ltrs-xl ltrs-green2 titles ani-title">Siguenos</h4>
+                <div class="line-title2 ani-apper-left"></div>
+            </section>
+            <section class="Cont-redes">
+                <article class="Cont-redes-grid">
+                    <!-- Instagram -->
+                    <iframe class="Insta" src="https://www.instagram.com/energiven_/embed/" frameborder="0" scrolling="no"></iframe>
+                    <!-- Instagram -->
+
+                    <!-- Facebook -->
+                    <iframe class="Face" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100063649997030&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" style="border:none;overflow:hidden"
+                        scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <!-- Facebook -->
+                    <!-- Tiktok -->
+                    <blockquote class="tiktok-embed Tiktok" cite="https://www.tiktok.com/@energiven_" data-unique-id="energiven_" data-embed-from="embed_page" data-embed-type="creator">
+                        <section>
+                            <a target="_blank" href="https://www.tiktok.com/@energiven_?refer=creator_embed">@energiven_</a
+                        >
+                    </section>
+                    </blockquote>
+                    <!-- Tiktok -->
+                </article>
+            </section>            
+    </div>
+    
+
+     <!-- Inicio de Footer -->
+
+     <footer class="Cont Footer Footer-bg">
+        <img class="Footer-logo" src="../recursos/LOGO_ENERGIVEN-SIN-FONDO-500px.webp" alt="">
+        <ul class="Nav-footer">
+            <li class="Nav-btns"><a class="a" href="#home">Inicio</a></li>
+            <li class="Nav-btns"><a class="a" href="#about">Nosotros</a></li>
+            <li class="Nav-btns"><a class="a" href="#services">Servicios</a></li>
+            <li class="Nav-btns"><a class="a" href="#galeria">Proyectos</a></li>
+            <li class="Nav-btns"><a class="a" href="#contactos">Contactos</a></li>
+        </ul>
+        <section class="Cont-3">
+            <article class="Cards-foot">
+                <i class="ltrs-white fa-solid fa-envelope"></i>
+                <a class="a ltrs-white ltrs-base" href="">Energiven@gmail.com</a>
+            </article>
+            <article class="Cards-foot">
+                <i class="ltrs-white fa-solid fa-location-dot"></i>
+                <a class="a ltrs-white " href="">548, lorem, simpli dumi 234254</a>
+            </article>
+            <article class="Cards-foot">
+                <i class="ltrs-white fa-solid fa-phone"></i>
+                <a class="a ltrs-white " href="">04245327417</a>
+            </article>
+        </section>
+        <article class="Footer-rrss">
+            <p class="ltrs-base ltrs-white">Energiven &#169 </p>
+            <ul class="rrss-y">
+                <li class="a "><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <div class="balls"></div>
+                <li class="a "><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <div class="balls"></div>
+                <li class="a "><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </article>
+
     </footer>
 
     <!-- final footer -->
@@ -554,5 +644,6 @@
     <script src="../js/servicios.js"></script>
     <script src="../js/contador.js"></script>
     <script src="../js/correo-es.js"></script>
+    <script async src="https://www.tiktok.com/embed.js"></script>
 </body>
 </html>

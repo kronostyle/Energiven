@@ -27,6 +27,7 @@ body.dark {
     --verde_2: #002e00;
     --verde_3: #4e8d08;
     --bg-input:#333;
+    --lines-color:var(--line-section2);
 }
 
 
