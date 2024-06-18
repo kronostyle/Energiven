@@ -166,7 +166,7 @@
 
 
 .Cont-5 {
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255), transparent), url('../recursos/hojasverdesbg.png'), linear-gradient(to top, rgb(255, 255, 255), transparent 10%);
+    background-image: linear-gradient(to bottom,var(--body-color), transparent), url('../recursos/hojasverdesbg.png'), linear-gradient(to top, rgb(255, 255, 255), transparent 10%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,7 +177,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, transparent 50%);
+    background-image: linear-gradient(to top, var(--body-color) 0%, transparent 50%);
 }
 
 .Cont-redes-grid {
@@ -1173,7 +1173,7 @@ display: none;
 
 .Nav-btns a {
     font-weight: 600;
-    color: var(--bg-input);
+    /* color: var(--bg-input); */
     font-size: var(--fs-base);
 }
 
