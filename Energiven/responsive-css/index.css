@@ -188,10 +188,11 @@
 
     /* Footer */
     .Footer {
-        padding-top: 25px;
+        padding-top: 50px;
     }
     
     .Nav-footer {
+        margin-top: 3%;
         flex-direction: column;
         border: none;
     }
